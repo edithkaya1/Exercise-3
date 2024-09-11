@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightercolor: #F0D0E7;
+   
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-content:center;
+    text-align:center;
+    background-color: rgb(94, 41, 144);
+    border: 2px solid black;
+    padding: 10px;
+    gap: 20px;
+    background-image: linear-gradient(to right bottom, #EDEAF9 25%, #A07FBB 50%, #6676B1 25%);
+    margin-inline: 5px;
+}
+
+#pic {
+    width: 75px;
+}
+
+.nav-list a{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #024216;
+}
+
+a:hover {
+    background-color: var(--lightercolor);
+    border-radius: 20%;
+    border: 2px solid black;
+    box-shadow: 10px 2px 5px 0 #EDEAF9;
+}
+
+body {
+    background-color: var(--lightercolor);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    color: rgb(89, 12, 63);
+    text-shadow: 5px 5px 13px grey;
+}
+
+p {
+    font-size: 20px;
+    color: #112436;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+    margin: 20px; 
+}
+
+span {
+    font-size: 2rem;
+    color: #b36484;
+    text-shadow: 2px 2px 2px rgb(204, 197, 197);
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+    padding: 1rem;
+    height: 100vh;
+}
+
+.span-2-columns {
+    grid-column: span 2;
+}
+
+.span-2-rows {
+    grid-row: span 2;
+}
+
+.grid-pic1 {
+    /* width: 100%;
+    height: 50vh; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2023/10/12/08/23/bird-8310172_1280.png);
+    border: 5px double purple;
+}
+
+.grid-pic2 {
+    /* width: 100%;
+    height: 50vh; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2024/08/28/09/05/gannet-9003524_1280.jpg);
+    border: 5px double purple;
+}
+
+.grid-pic3 {
+    /* width: 100%;
+    height: 50vh; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2024/03/15/17/50/dogs-8635461_1280.jpg);
+    border: 5px double purple;
+}
+
+.grid-pic4 {
+    /* width: 100%;
+    height: 50vh; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2023/07/21/16/23/cat-8141916_640.jpg);
+    border: 5px double purple;
+}
+
+.grid-pic5 {
+    /* width: 100%;
+    height: 50vh; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2022/10/11/12/38/dog-7514202_1280.jpg);
+    border: 5px double purple;
+}
+
+.grid-pic6 {
+    /* width: 100%;
+    height: 50vh; */
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2023/09/04/17/53/pelican-8233306_1280.jpg);
+    border: 5px double purple;
+}
+
+footer {
+    font-size: 1.2rem;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(202, 187, 216);
+    width: 100%;
+    height: 50px;
+}
+
+@media screen and (width < 900px)
+{
+    .nav-list a {
+        margin: 2px;
+        font-size: 1rem;
+        /* padding: 0.6rem; */
+
+    }
+    #pic {
+        width: 40px;
+    }   
+    .container {
+        grid-template-columns: repeat(autofit, minmax(50px,1fr));
+    }           
+}
